@@ -1,1 +1,9 @@
-/*# sourceMappingURL=style.css.map */
+.pronavi {
+  border: 1px solid;
+}
+.pronavi h1 {
+  color: red;
+}
+.pronavi h2 {
+  font-size: 20px;
+}/*# sourceMappingURL=style.css.map */

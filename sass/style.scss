@@ -1,15 +1,15 @@
 @charset 'UTF-8';
 
-@use '01header';
-@use '02mainvisual';
-@use '03pronavi';
-@use '04strong-point';
-@use '05voice';
-@use '06collection';
-@use '07flow';
-@use '08free';
-@use '09money';
-@use '10question';
-@use '11company';
-@use '12footer';
+@use './01header' as header;
+@use './02mainvisual' as mainvisual;
+@use './03pronavi' as pronavi;
+@use './04strong-point' as strong-point;
+@use './05voice' as voice;
+@use './06collection' as collection;
+@use './07flow' as flow;
+@use './08free' as free;
+@use './09money' as money;
+@use './10question' as question;
+@use './11company' as company;
+@use './12footer' as footer;
 
