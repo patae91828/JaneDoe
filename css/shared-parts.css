@@ -1,10 +1,31 @@
-/* コンタクトボタン（hover) */
+@charset "UTF-8";
 
-
-a {
-    display: block;
+html {
+    font-size: 62.5%;
 }
 
+body {
+    font-size: 1.6rem;
+}
+
+a {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+}
+
+ul {
+    list-style: none;
+}
+
+
+/* コンタクトボタン（hover) */
 .contact-btn {
     width: 250px;
     height: 40px;
@@ -26,12 +47,13 @@ a {
 
 /* コンタクトボタン（ぷるーん） */
 
-.btn_box{
+.btn_box {
     position: absolute;
-    top: 100px;  /* 使う際はコメントアウトしてください */
+    top: 100px;
+    /* 使う際はコメントアウトしてください */
 }
 
-#btn_animation .btn{
+#btn_animation .btn {
     display: block;
     width: 250px;
     height: 40px;
@@ -49,12 +71,15 @@ a {
     0% {
         transform: scale(1, 0.8);
     }
+
     20% {
         transform: scale(0.8, 1.1);
     }
+
     95% {
         transform: scale(1, 1);
     }
+
     100% {
         transform: scale(1, 0.8);
     }
