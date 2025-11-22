@@ -1,0 +1,37 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: top; /* メインビジュアル出来たらボーダー消す */
+}
+
+.header-left h1 {
+    max-width: 150px;
+    height: 50px;
+    margin: 50px 60px;
+}
+
+.header-right {
+    margin-top: 50px;
+    margin-right: 200px;
+}
+
+.header-right ul {
+    list-style: none;
+    display: flex;
+    border: 1px solid black;
+    border-radius: 60px;
+}
+
+.header-right li {
+    padding-right: 20px;
+    padding-block: 15px;
+}
+
+.header-right li:first-child {
+    padding-left: 50px;
+}
+
+.header-right li:last-child {
+    padding-right: 50px;
+}
+
