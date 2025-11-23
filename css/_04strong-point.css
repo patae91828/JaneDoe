@@ -144,7 +144,7 @@ sp-list
 .page-modal .text{
     font-size: 3.0rem;
     font-weight: bold;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     position: relative;
 }
 
@@ -198,6 +198,43 @@ sp-list
     padding: 15px 20px;
     text-align: left;
 }
+
+/*=================================================
+強み専用ページ＿img-page
+===================================================*/
+#small-page-img-animation{
+    display: inline-block;
+    margin-bottom: 25px;
+}
+.small-page-img {
+    display: block;
+    width: 400px;
+    height: 40px;
+    font-size: 2.0rem;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.35);
+    line-height: 40px;
+    text-decoration: none;
+    background: linear-gradient(to right, #70B8EE, #497BA1);
+    color: white;
+    text-align: center;
+    border-radius: 78px;
+    animation: btn_animation 1s infinite;
+}
+@keyframes small-page-img-animation {
+    0% {
+        transform: scale(1, 0.8);
+    }
+    20% {
+        transform: scale(0.8, 1.1);
+    }
+    95% {
+        transform: scale(1, 1);
+    }
+    100% {
+        transform: scale(1, 0.8);
+    }
+}
+
 
 
 /*=================================================
