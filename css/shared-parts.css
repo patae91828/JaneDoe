@@ -39,6 +39,7 @@ ul {
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     transition: .3s;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.35);
 }
 
 .contact-btn:hover {
@@ -97,12 +98,12 @@ ul {
 
 .section-title::before {
     width: 80px;
-    height: 0.2rem;
+    height: 0.4rem;
     content: "";
     position: absolute;
     text-align: center;
     top: 100%;
-    left: 25px;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: #497BA1;
-
 }
