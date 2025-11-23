@@ -1,6 +1,8 @@
 .wrapper{
-    width: 954px;
+    max-width: 954px;
+    width: 100%;
     display: inline-block;
+    padding-inline: 30px;
 }
 .section-title{
     font-size: 3.0rem;
@@ -9,7 +11,9 @@
 
 
 
-/* strong-point */
+/*=================================================
+strong-point
+===================================================*/
 .strong-point{
     border: 1px solid;
     text-align: center;
@@ -24,7 +28,9 @@
 
 
 
-/* sp-list */
+/*=================================================
+sp-list
+===================================================*/
 .sp-list{
     display: grid;
     grid-template-columns: repeat(2,2fr);
@@ -74,7 +80,129 @@
 
 
 
-/* 申し込みボタン */
+/*=================================================
+強み専用ページ＿外装
+===================================================*/
+#modal-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.4);
+    display: none;
+    z-index: 999; /* 最前面の一歩手前 */
+}
+
+/* 白い中央ページ */
+.page-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    max-width: 760px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 14px;
+    transform: translate(-50%, -50%) scale(0.9);
+    display: none;
+    z-index: 1000; /* 背景より前 */
+    transition: transform .25s ease, opacity .25s ease;
+    opacity: 0;
+}
+
+/* 表示状態 */
+.page-modal.show {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    display: block;
+}
+
+/* ×ボタン */
+.close-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/*=================================================
+強み専用ページ＿内装
+===================================================*/
+.page-modal .number{
+    font-size: 4.0rem;
+    font-weight: bold;
+    color: #497BA1;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.page-modal .text{
+    font-size: 3.0rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.page-modal .text::before {
+    width: 80px;
+    height: 0.4rem;
+    content: "";
+    position: absolute;
+    text-align: center;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #497BA1;
+}
+
+.small-page{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    gap: 50px;
+}
+
+.small-content{
+    box-shadow: 0 0 8px black;
+    border-radius: 20px;
+}
+
+.small-content h4{
+    padding-block: 15px;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.35);
+    border-radius: 20px 20px 0 0;
+}
+
+.small-content:nth-child(1) h4{
+    background-color: #92CB97;
+}
+
+.small-content:nth-child(2) h4{
+    background-color: #FFD60E;
+}
+
+.small-content:nth-child(3) h4{
+    background-color: #3B82C4;
+}
+
+.small-content:nth-child(4) h4{
+    background-color: #FCC043;
+}
+
+.small-content p{
+    padding: 15px 20px;
+    text-align: left;
+}
+
+
+/*=================================================
+申し込みボタン
+===================================================*/
 .sp-apply{
     display: inline-block;
     margin-bottom: 50px;
@@ -86,7 +214,9 @@
 
 
 
-/* 動画ボタン */
+/*=================================================
+動画ボタン
+===================================================*/
 .movie-btn{
     display: inline-block;
     margin: 0 auto;

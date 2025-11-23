@@ -62,28 +62,146 @@
                         <p class="number">01</p>
                         <p class="text">学習環境</p>
                         <img src="/img/strong-point1.png" alt="strong-point1">
-                        <a class="sp-btn 01" href="#">詳しく見る→</a>
+                        <button class="sp-btn" data-target="page1">詳しく見る→</button>
                     </li>
                     <li class="sp-single">
                         <p class="number">02</p>
                         <p class="text">作業会</p>
                         <img src="/img/strong-point2.png" alt="strong-point2">
-                        <a class="sp-btn 02" href="#">詳しく見る→</a>
+                        <button class="sp-btn" data-target="page2">詳しく見る→</button>
                     </li>
                     <li class="sp-single">
                         <p class="number">03</p>
                         <p class="text">イベント</p>
                         <img src="/img/strong-point3.png" alt="strong-point3">
-                        <a class="sp-btn 03" href="#">詳しく見る→</a>
+                        <button class="sp-btn" data-target="page3">詳しく見る→</button>
                     </li>
                     <li class="sp-single">
                         <p class="number">04</p>
                         <p class="text">案件獲得サポート</p>
                         <img src="/img/strong-point4.png" alt="strong-point4">
-                        <a class="sp-btn 04" href="#">詳しく見る→</a>
+                        <button class="sp-btn" data-target="page4">詳しく見る→</button>
                     </li>
                 </ul>
+<!-- 専用ページ -->
+                <div id="modal-bg"></div>
 
+                <div class="page-modal" id="page1">
+                    <button class="close-btn">×</button>
+                    <p class="number">01</p>
+                    <p class="text">学習環境</p>
+                    <div class="small-page">
+                        <div class="small-content">
+                            <h4>マンツーマン</h4>
+                            <p>一人ひとりに担当講師がつき、あなたのペースに合わせて丁寧にサポートします。<br>
+                            マンツーマン指導なので、分からないこともその場で気軽に質問できます。</p>
+                        </div>
+                        <div class="small-content">
+                            <h4>24時間対応</h4>
+                            <p>学習時間は人それぞれ。<br>
+                            いつでチャットで質問や相談ができ、24時間以内に講師から丁寧な返信が届きます。<br>
+                            自分のタイミングで安心して学べます。</p>
+                        </div>
+                        <div class="small-content">
+                            <h4>自由な日程調整</h4>
+                            <p>レッスンの日時は自由に設定でき、日付や時間もあなたの予定に合わせて調整可能です。<br>
+                            固定の曜日や時間に縛られず、柔軟に学習を進められます。</p>
+                        </div>
+                        <!-- <div class="small-content">
+                            <h4>タイトル</h4>
+                            <p>テキスト</p>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="page-modal" id="page2">
+                    <button class="close-btn">×</button>
+                    <p class="number">02</p>
+                    <p class="text">作業会</p>
+                    <div class="small-page">
+                        <div class="small-content">
+                            <h4>作業会</h4>
+                            <p>仮想空間「メタリーフ」を使用し、全国の仲間とアバターを通じて交流できます。<br>
+                            同じ学習をしている仲間とコミュニケーションを取りながら、教え合いや横のつながりを深められる環境です。</p>
+                        </div>
+                        <div class="small-content">
+                            <h4>セミナー</h4>
+                            <p>週に一度、現役エンジニアや運営メンバーによるセミナーを開催しています。<br>
+                            技術的な話だけでなく、仕事への向き合い方やモチベーションを高める内容など、毎回新たな気づきを得られる時間です。<br>
+                            セミナー後は質問部屋で登壇者と直接話すこともできます。</p>
+                        </div>
+                        <div class="small-content">
+                            <h4>もくもく部屋</h4>
+                            <p>自分のペースで集中して作業に取り組める専用スペースです。<br>
+                            作業の合間には部屋を出て、仲間と気軽に交流することもできます。</p>
+                        </div>
+                        <div class="small-content">
+                            <h4>初心者交流会</h4>
+                            <p>週1回、初心者同士で集まって交流を深めるイベントです。<br>
+                            同じスタートラインの仲間と出会い、励まし合いながら成長できる環境があります。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-modal" id="page3">
+                    <button class="close-btn">×</button>
+                    <p class="number">03</p>
+                    <p class="text">イベント</p>
+                    <div class="small-page">
+                        <div class="small-content">
+                            <h4>オフ会</h4>
+                            <p>全国の仲間や運営メンバーと実際に会えるオフラインイベントです。<br>
+                            リアルな交流を通して学習意欲が高まり、モチベーションもぐっと上がります。</p>
+                        </div>
+                        <div class="small-content">
+                            <h4>クラス会</h4>
+                            <p>運営スタッフが生徒一人ひとりと直接コミュニケーションを取り、学習以外の強みや個性を引き出してくれます。<br>
+                            クラス内での交流イベントもあり、仲間との絆が深まる時間です。</p>
+                        </div>
+                        <div class="small-content">
+                            <h4>オンライン交流会</h4>
+                            <p>月に一度、少人数のグループに分かれて行うオンライン交流イベントです。<br>
+                            自己紹介からフリートークまで自由に会話しながら、仲間とのつながりを広げることができます。</p>
+                        </div>
+                        <div class="small-content">
+                            <h4>ハッカソン</h4>
+                            <p>仲間と共にゼロからHPを作り上げる実践型イベント。<br>
+                            スキル向上、仲間づくり、キャリアのチャンスが一気に手に入る挑戦の場です。<br>
+                            最後には発表を行い、投票によって優勝者を決めます。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="page-modal" id="page4">
+                    <button class="close-btn">×</button>
+                    <p class="number">04</p>
+                    <p class="text">案件獲得サポート</p>
+                    <div class="small-page">
+                        <div class="small-content">
+                            <h4>オリジナルサイト作成</h4>
+                            <p>オリジナルサイトを制作し、ポートフォリオとして活用できる実践的なスキルを身につけます。<br>
+                            プロ視点でフィードバックし、クオリティアップまでしっかりサポートします。</p>
+                        </div>
+                        <div class="small-content">
+                            <h4>週1回の授業</h4>
+                            <p>講師と週に１回ミーティングを実施し、進捗管理や課題解決をサポートします。<br>
+                            迷いやすい営業フェーズでも、実務的なアドバイスを受けながら着実に前へ進める体制です。<br>
+                            モチベーション維持にもつながります。</p>
+                        </div>
+                        <div class="small-content">
+                            <h4>営業代行</h4>
+                            <p>商談の場に同席し、提案方法やコミュニケーション術をリアルに学びながら受注の流れを理解します。<br>
+                            振り返りも行い、次回に活かせる力を身につけます。</p>
+                        </div>
+                        <div class="small-content">
+                            <h4>LINEでのサポート</h4>
+                            <p>営業活動で困ったときも、LINEでいつでも気軽に相談できます。<br>
+                            提案文面ややり取りの添削など、実践に即したフォローを行います。<br>
+                            ひとりでは判断が難しい場面でも安心して進められます。</p>
+                        </div>
+                    </div>
+                </div>
+                
+
+                
+<!-- 専用ページ -->
                 <div class="sp-apply">
                     <a href="#" class="contact-btn">無料カウンセリングを申し込む</a>
                 </div>

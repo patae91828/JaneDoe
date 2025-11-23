@@ -152,7 +152,47 @@ $(function () {
   /*=================================================
   プロナビの強み
   ===================================================*/
+const openBtns = document.querySelectorAll('.sp-btn');
+const pages = document.querySelectorAll('.page-modal');
+const modalBg = document.getElementById('modal-bg');
 
+// モーダルを開く
+openBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const target = btn.dataset.target;
+
+    // 背景有効化
+    modalBg.style.display = 'block';
+
+    // 背景クリックで閉じる
+    modalBg.onclick = closeAll;
+
+    // 全ページ非表示
+    pages.forEach(p => {
+      p.classList.remove('show');
+      p.style.display = 'none';
+    });
+
+    // 対象ページ表示
+    const page = document.getElementById(target);
+    page.style.display = 'block';
+    setTimeout(() => page.classList.add('show'), 10);
+  });
+});
+
+// ×で閉じる
+document.querySelectorAll('.close-btn').forEach(btn => {
+  btn.addEventListener('click', closeAll);
+});
+
+// 閉じる処理
+function closeAll() {
+  modalBg.style.display = 'none';
+  pages.forEach(p => {
+    p.classList.remove('show');
+    p.style.display = 'none';
+  });
+}
 
   
   /*=================================================
