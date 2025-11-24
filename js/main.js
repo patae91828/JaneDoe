@@ -81,23 +81,18 @@ $(function () {
   ===================================================*/
   // カルーセル用 jQueryプラグイン「slick」の設定
   // マニュアル：https://kenwheeler.github.io/slick/
-  $(".slick-area").slick({
-    arrows: false,
-    // arrows: false：矢印ナビゲーションを非表示にします。
-
-    // (dots: true,)
-    // スライドショーにドットナビゲーション（現在のスライドを示すドット）が表示されます。
-
+  $(".voice-slider").slick({
+    arrows: true,
+    prevArrow: '<button type="button" class="slide-arrow prev-arrow"><span class="slide-arrow__arrow prev-arrow__arrow"></span></button>',
+    nextArrow: '<button type="button" class="slide-arrow next-arrow"><span class="slide-arrow__arrow next-arrow__arrow"></span></button>',
+    slidesToScroll: 1,
     centerMode: true,
-    // centerMode: true：現在のスライドを中央に配置します。
-    centerPadding: "100px",
-    // centerPadding: "100px"：中央に配置されたスライドの左右の余白を指定します。
+    centerPadding: "0",
     slidesToShow: 3,
-    // slidesToShow: 3：表示するスライドの数を指定します（1度に表示されるスライドの数）。
-    autoplay: true,
-    // autoplay: true：自動再生を有効にします。
+    autoplay: false,
     autoplaySpeed: 3000,
-    // autoplaySpeed: 3000：自動再生の速度を指定します（ミリ秒単位）。
+    // prevArrow: '<div class="slide-arrow prev-arrow"></div>',
+    // nextArrow: '<div class="slide-arrow next-arrow"></div>',
     responsive: [
       {
         breakpoint: 768,
@@ -110,6 +105,28 @@ $(function () {
       },
     ],
   });
+
+  $(".collection-slider").slick({
+    arrows: false,
+    centerMode: true,
+    centerPadding: 0,
+    slidesToShow: 4,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          // ブレークポイント（デバイスの幅が768ピクセル以下の場合）では、
+          centerPadding: "50px",
+          slidesToShow: 1,
+          // centerPaddingとslidesToShowの値が変更され、中央余白が"50px"に、表示されるスライドの数が1になります。
+        },
+      },
+    ],
+  });
+
+
 
 
   /*=================================================
