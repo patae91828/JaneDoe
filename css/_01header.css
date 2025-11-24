@@ -13,7 +13,7 @@ header {
 .header-right {
     margin-top: 50px;
     margin-right: 200px;
-    width: 820px;
+    width: 900px;
     margin: auto;
 }
 
@@ -23,12 +23,13 @@ header {
     justify-content: space-between;
     border: 1px solid gray;
     border-radius: 60px;
+    background-color: white;
 }
 
 .header-right a {
-    font-size: 15px;
+    font-size: 17px;
     color: transparent;
-    background: linear-gradient(to right, #F9E900 50%, #000 50%) 100%;
+    background: linear-gradient(to right, #3b82c4 50%, #000 50%) 100%;
     background-clip: text;
     background-size: 200% 100%;
     transition: background-position 0.3s;
@@ -37,6 +38,7 @@ header {
 
 .header-right a:hover {
   background-position: 0 100%;
+  font-weight: bold;
 }
 
 .header-right a:first-child {
@@ -47,3 +49,4 @@ header {
     margin-right: 50px;
 }
 
+    
