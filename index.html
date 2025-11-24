@@ -26,6 +26,9 @@
     <link rel="stylesheet" href="css/_11company.css">
     <link rel="stylesheet" href="css/_12footer.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@100..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -33,19 +36,17 @@
         <div class="header-left">
             <h1><img src="img/logo.png" alt="PRONAVIロゴ"></h1>
         </div>
-        <div class="header-right">
-            <nav>
-                <ul>
-                    <li>プロナビとは</li>
-                    <li>プロナビの強み</li>
-                    <li>受講生の声</li>
-                    <li>受講の流れ</li>
-                    <li>料金/期間</li>
-                    <li>よくある質問</li>
-                    <li>会社概要</li>
-                </ul>
-            </nav>
-        </div>
+        <nav class="header-right">
+            <ul>
+                <a href="#プロナビとは"><li>プロナビとは</li></a>
+                <a href="#プロナビの強み"><li>プロナビの強み</li></a>
+                <a href="#受講生の声"><li>受講生の声</li></a>
+                <a href="#受講の流れ"><li>受講の流れ</li></a>
+                <a href="#料金/期間"><li>料金/期間</li></a>
+                <a href="#よくある質問"><li>よくある質問</li></a>
+                <a href="#会社概要"><li>会社概要</li></a>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -83,7 +84,7 @@
                         <button class="sp-btn" data-target="page4">詳しく見る→</button>
                     </li>
                 </ul>
-<!-- 専用ページ -->
+                <!-- 専用ページ -->
                 <div id="modal-bg"></div>
 
                 <div class="page-modal" id="page1">
@@ -94,18 +95,18 @@
                         <div class="small-content">
                             <h4>マンツーマン</h4>
                             <p>一人ひとりに担当講師がつき、あなたのペースに合わせて丁寧にサポートします。<br>
-                            マンツーマン指導なので、分からないこともその場で気軽に質問できます。</p>
+                                マンツーマン指導なので、分からないこともその場で気軽に質問できます。</p>
                         </div>
                         <div class="small-content">
                             <h4>24時間対応</h4>
                             <p>学習時間は人それぞれ。<br>
-                            いつでチャットで質問や相談ができ、24時間以内に講師から丁寧な返信が届きます。<br>
-                            自分のタイミングで安心して学べます。</p>
+                                いつでチャットで質問や相談ができ、24時間以内に講師から丁寧な返信が届きます。<br>
+                                自分のタイミングで安心して学べます。</p>
                         </div>
                         <div class="small-content">
                             <h4>自由な日程調整</h4>
                             <p>レッスンの日時は自由に設定でき、日付や時間もあなたの予定に合わせて調整可能です。<br>
-                            固定の曜日や時間に縛られず、柔軟に学習を進められます。</p>
+                                固定の曜日や時間に縛られず、柔軟に学習を進められます。</p>
                         </div>
                         <!-- <div class="small-content">
                             <h4>タイトル</h4>
@@ -117,30 +118,30 @@
                     <button class="close-btn">×</button>
                     <p class="number">02</p>
                     <p class="text">作業会</p>
-                    <div id="small-page-img-animation">
+                    <div class="small-page-img-animation">
                         <button class="small-page-img" data-target="page5">→作業会の様子はこちら←</button>
                     </div>
                     <div class="small-page">
                         <div class="small-content">
                             <h4>作業会</h4>
                             <p>仮想空間「メタリーフ」を使用し、全国の仲間とアバターを通じて交流できます。<br>
-                            同じ学習をしている仲間とコミュニケーションを取りながら、教え合いや横のつながりを深められる環境です。</p>
+                                同じ学習をしている仲間とコミュニケーションを取りながら、教え合いや横のつながりを深められる環境です。</p>
                         </div>
                         <div class="small-content">
                             <h4>セミナー</h4>
                             <p>週に一度、現役エンジニアや運営メンバーによるセミナーを開催しています。<br>
-                            技術的な話だけでなく、仕事への向き合い方やモチベーションを高める内容など、毎回新たな気づきを得られる時間です。<br>
-                            セミナー後は質問部屋で登壇者と直接話すこともできます。</p>
+                                技術的な話だけでなく、仕事への向き合い方やモチベーションを高める内容など、毎回新たな気づきを得られる時間です。<br>
+                                セミナー後は質問部屋で登壇者と直接話すこともできます。</p>
                         </div>
                         <div class="small-content">
                             <h4>もくもく部屋</h4>
                             <p>自分のペースで集中して作業に取り組める専用スペースです。<br>
-                            作業の合間には部屋を出て、仲間と気軽に交流することもできます。</p>
+                                作業の合間には部屋を出て、仲間と気軽に交流することもできます。</p>
                         </div>
                         <div class="small-content">
                             <h4>初心者交流会</h4>
                             <p>週1回、初心者同士で集まって交流を深めるイベントです。<br>
-                            同じスタートラインの仲間と出会い、励まし合いながら成長できる環境があります。</p>
+                                同じスタートラインの仲間と出会い、励まし合いながら成長できる環境があります。</p>
                         </div>
                     </div>
                 </div>
@@ -148,30 +149,30 @@
                     <button class="close-btn">×</button>
                     <p class="number">03</p>
                     <p class="text">イベント</p>
-                    <div id="small-page-img-animation">
+                    <div class="small-page-img-animation">
                         <button class="small-page-img" data-target="page5">→イベントの様子はこちら←</button>
                     </div>
                     <div class="small-page">
                         <div class="small-content">
                             <h4>オフ会</h4>
                             <p>全国の仲間や運営メンバーと実際に会えるオフラインイベントです。<br>
-                            リアルな交流を通して学習意欲が高まり、モチベーションもぐっと上がります。</p>
+                                リアルな交流を通して学習意欲が高まり、モチベーションもぐっと上がります。</p>
                         </div>
                         <div class="small-content">
                             <h4>クラス会</h4>
                             <p>運営スタッフが生徒一人ひとりと直接コミュニケーションを取り、学習以外の強みや個性を引き出してくれます。<br>
-                            クラス内での交流イベントもあり、仲間との絆が深まる時間です。</p>
+                                クラス内での交流イベントもあり、仲間との絆が深まる時間です。</p>
                         </div>
                         <div class="small-content">
                             <h4>オンライン交流会</h4>
                             <p>月に一度、少人数のグループに分かれて行うオンライン交流イベントです。<br>
-                            自己紹介からフリートークまで自由に会話しながら、仲間とのつながりを広げることができます。</p>
+                                自己紹介からフリートークまで自由に会話しながら、仲間とのつながりを広げることができます。</p>
                         </div>
                         <div class="small-content">
                             <h4>ハッカソン</h4>
                             <p>仲間と共にゼロからHPを作り上げる実践型イベント。<br>
-                            スキル向上、仲間づくり、キャリアのチャンスが一気に手に入る挑戦の場です。<br>
-                            最後には発表を行い、投票によって優勝者を決めます。</p>
+                                スキル向上、仲間づくり、キャリアのチャンスが一気に手に入る挑戦の場です。<br>
+                                最後には発表を行い、投票によって優勝者を決めます。</p>
                         </div>
                     </div>
                 </div>
@@ -183,30 +184,31 @@
                         <div class="small-content">
                             <h4>オリジナルサイト作成</h4>
                             <p>オリジナルサイトを制作し、ポートフォリオとして活用できる実践的なスキルを身につけます。<br>
-                            プロ視点でフィードバックし、クオリティアップまでしっかりサポートします。</p>
+                                プロ視点でフィードバックし、クオリティアップまでしっかりサポートします。</p>
                         </div>
                         <div class="small-content">
                             <h4>週1回の授業</h4>
                             <p>講師と週に１回ミーティングを実施し、進捗管理や課題解決をサポートします。<br>
-                            迷いやすい営業フェーズでも、実務的なアドバイスを受けながら着実に前へ進める体制です。<br>
-                            モチベーション維持にもつながります。</p>
+                                迷いやすい営業フェーズでも、実務的なアドバイスを受けながら着実に前へ進める体制です。<br>
+                                モチベーション維持にもつながります。</p>
                         </div>
                         <div class="small-content">
                             <h4>営業代行</h4>
                             <p>商談の場に同席し、提案方法やコミュニケーション術をリアルに学びながら受注の流れを理解します。<br>
-                            振り返りも行い、次回に活かせる力を身につけます。</p>
+                                振り返りも行い、次回に活かせる力を身につけます。</p>
                         </div>
                         <div class="small-content">
                             <h4>LINEでのサポート</h4>
                             <p>営業活動で困ったときも、LINEでいつでも気軽に相談できます。<br>
-                            提案文面ややり取りの添削など、実践に即したフォローを行います。<br>
-                            ひとりでは判断が難しい場面でも安心して進められます。</p>
+                                提案文面ややり取りの添削など、実践に即したフォローを行います。<br>
+                                ひとりでは判断が難しい場面でも安心して進められます。</p>
                         </div>
                     </div>
                 </div>
-<!-- 専用ページここまで -->
 
 
+
+                <!-- 専用ページ -->
                 <div class="sp-apply">
                     <a href="#" class="contact-btn">無料カウンセリングを申し込む</a>
                 </div>
@@ -221,6 +223,101 @@
         </section>
 
 
+
+        <img src="img/wave-top.png" alt="" class="wave-top">
+        <section class="voice">
+            <div class="wrapper-voice">
+                <h2 class="section-title">受講者の声</h2>
+                <div class="voice-slider">
+                    <div class="voice-item">
+                        <img src="img/voice1.png">
+                        <div class="voice-text">
+                            <p>他スクールからプロナビへ!</p>
+                            <div class="voice-info">
+                                <span>20代女性</span>
+                                <span>卒業生</span>
+                            </div>
+                            <p>他スクールを受講したのち、結果を残したいとプロナビへ入会。<br>
+                                5ヶ月で案件を獲得。<br>
+                                現在はフリーランスとして案件をこなしながら活躍中。</p>
+                        </div>
+                    </div>
+                    <div class="voice-item">
+                        <img src="img/voice2.png">
+                        <div class="voice-text">
+                            <p>消防士からフリーランスへ!</p>
+                            <div class="voice-info">
+                                <span>20代男性</span>
+                                <span>卒業生</span>
+                            </div>
+                            <p>家族との時間を大切にしたいという想いから、未経験でパソコン購入の段階から学習をスタート。<br>
+                                約5ヶ月で初案件を獲得。<br>
+                                現在はフリーランスとして活動しながら講師としても活躍中。</p>
+                        </div>
+                    </div>
+                    <div class="voice-item">
+                        <img src="img/voice3.png    ">
+                        <div class="voice-text">
+                            <p>将来を見据えて在宅スキルを</p>
+                            <div class="voice-info">
+                                <span>30代女性</span>
+                                <span>在校生</span>
+                            </div>
+                            <p>看護師として不規則勤務が続く中、将来の働き方を見据えて在宅で働けるスキルを求めプロナビへ。<br>
+                                講師のサポートもあり挫折することなくカリキュラムを完了し、案件獲得も達成。</p>
+                        </div>
+                    </div>
+                    <div class="voice-item">
+                        <img src="img/voice4.png">
+                        <div class="voice-text">
+                            <p>挫折からの再スタート！</p>
+                            <div class="voice-info">
+                                <span>30代男性</span>
+                                <span>在校生</span>
+                            </div>
+                            <p>最初に通ったスクールでは挫折してしまったが、「Webアプリを作りたい」という思いでプロナビへ。<br>
+                                同じ志を持つ仲間とも出会い、刺激を受けながら学習を継続。<br>
+                                現在はオリジナルサイトを制作中。</p>
+                        </div>
+                    </div>
+                    <div class="voice-item">
+                        <img src="img/voice1.png">
+                        <div class="voice-text">
+                            <p>家族との時間を増やすため</p>
+                            <div class="voice-info">
+                                <span>20代女性</span>
+                                <span>卒業生</span>
+                            </div>
+                            <p>子どもが生まれたことをきっかけに、家族の時間を大切にできる働き方へシフトしたいと育休中に学習を開始。<br>
+                                手厚いサポートに支えられながら、前向きにカリキュラムに取り組めています。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="collection">
+            <h2 class="section-title">作品集</h2>
+            <div class="wrapper-collection">
+                <ul class="collection-slider">
+                    <li><img src="img/portfolio1.png" alt=""></li>
+                    <li><img src="img/portfolio2.png" alt=""></li>
+                    <li><img src="img/portfolio3.png" alt=""></li>
+                    <li><img src="img/portfolio4.png" alt=""></li>
+                    <li><img src="img/portfolio4.png" alt=""></li>
+                </ul>
+                <div class="view-more-btn">
+                    <a href="https://pronavi-board.noe-p.com/" target="_blank">もっと見る</a>
+                </div>
+            </div>
+        </section>
+        <img src="img/wave-bottom.png" alt="" class="wave-bottom">
+
+        
+        <section class="flow">
+            <h2 class="section-title">受講の流れ</h2>
+        </section>
 
 
 
@@ -265,13 +362,82 @@
                     <li class="list-question"><span>Q</span>受講前に相談や体験はできますか？</li>
                     <li class="list-answer"><span>A</span> はい。無料カウンセリングや体験レッスンをご用意しています。お気軽にお申し込みください。</li>
                 </ul>
-                
-                
+
+
             </div>
         </section>
 
 
     </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
