@@ -202,7 +202,7 @@ sp-list
 /*=================================================
 強み専用ページ＿img-page
 ===================================================*/
-#small-page-img-animation{
+.small-page-img-animation{
     display: inline-block;
     margin-bottom: 25px;
 }
