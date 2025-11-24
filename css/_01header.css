@@ -5,7 +5,7 @@ header {
 }
 
 .header-left h1 {
-    max-width: 150px;
+    width: 150px;
     height: 50px;
     margin: 50px 60px;
 }
@@ -13,25 +13,37 @@ header {
 .header-right {
     margin-top: 50px;
     margin-right: 200px;
+    width: 820px;
+    margin: auto;
 }
 
 .header-right ul {
     list-style: none;
     display: flex;
-    border: 1px solid black;
+    justify-content: space-between;
+    border: 1px solid gray;
     border-radius: 60px;
 }
 
-.header-right li {
-    padding-right: 20px;
-    padding-block: 15px;
+.header-right a {
+    font-size: 15px;
+    color: transparent;
+    background: linear-gradient(to right, #F9E900 50%, #000 50%) 100%;
+    background-clip: text;
+    background-size: 200% 100%;
+    transition: background-position 0.3s;
+    margin: 10px;
 }
 
-.header-right li:first-child {
-    padding-left: 50px;
+.header-right a:hover {
+  background-position: 0 100%;
 }
 
-.header-right li:last-child {
-    padding-right: 50px;
+.header-right a:first-child {
+    margin-left: 50px;
+}
+
+.header-right a:last-child {
+    margin-right: 50px;
 }
 
