@@ -77,10 +77,9 @@ $(function () {
 
 
   /*=================================================
-  PICK UP スライダー
+  受講生の声、作品集スライダー
   ===================================================*/
-  // カルーセル用 jQueryプラグイン「slick」の設定
-  // マニュアル：https://kenwheeler.github.io/slick/
+// 受講生の声
   $(".voice-slider").slick({
     arrows: true,
     prevArrow: '<button type="button" class="slide-arrow prev-arrow"><span class="slide-arrow__arrow prev-arrow__arrow"></span></button>',
@@ -91,13 +90,10 @@ $(function () {
     slidesToShow: 3,
     autoplay: false,
     autoplaySpeed: 3000,
-    // prevArrow: '<div class="slide-arrow prev-arrow"></div>',
-    // nextArrow: '<div class="slide-arrow next-arrow"></div>',
     responsive: [
       {
         breakpoint: 768,
         settings: {
-          // ブレークポイント（デバイスの幅が768ピクセル以下の場合）では、
           centerPadding: "50px",
           slidesToShow: 1,
           // centerPaddingとslidesToShowの値が変更され、中央余白が"50px"に、表示されるスライドの数が1になります。
@@ -106,6 +102,8 @@ $(function () {
     ],
   });
 
+
+  // 作品集
   $(".collection-slider").slick({
     arrows: false,
     centerMode: true,
@@ -117,7 +115,6 @@ $(function () {
       {
         breakpoint: 768,
         settings: {
-          // ブレークポイント（デバイスの幅が768ピクセル以下の場合）では、
           centerPadding: "50px",
           slidesToShow: 1,
           // centerPaddingとslidesToShowの値が変更され、中央余白が"50px"に、表示されるスライドの数が1になります。

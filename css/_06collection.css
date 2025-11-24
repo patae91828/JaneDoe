@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+body {
+    background-color: #F3F1EF;
+}
+
 .collection {
     background: linear-gradient(to right, #D2F0D5, #6FB375);
     padding-bottom: 80px;

@@ -7,7 +7,6 @@
 .voice {
     position: relative;
     background: linear-gradient(to right, #D2F0D5, #6FB375);
-   
     padding-bottom: 120px;
 }
 
@@ -17,7 +16,6 @@
     margin: 0 auto;
 }
 
-
 .voice-slider .voice-item {
     min-height: 480px;
     height: auto;
@@ -26,10 +24,6 @@
     opacity: 0.3;
     transform: scale(.8);
     box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.3);
-}
-
-.js-slick-content {
-    position: relative;
 }
 
 .voice-slider .slick-slide {
@@ -59,7 +53,7 @@
 }
 
 .voice-info span {
-
+    
     padding: 5px 10px;
     border-radius: 15px;
     background-color: #FEE688;
@@ -69,16 +63,22 @@
     background-color: #9AB2D4;
 }
 
+.js-slick-content {
+    position: relative;
+}
+
 .voice-slider .slick-slide.slick-center .voice-item {
     transform: scale(1);
     opacity: 1;
 
 }
 
-.slick-center .voice-item {
+/* .slick-center .voice-item {
     position: relative;
-}
+} */
 
+
+/* slick矢印カスタマイズ */
 .prev-arrow,
 .next-arrow {
     width: 55px;
