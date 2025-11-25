@@ -4,6 +4,10 @@
     width: 100%;
 }
 
+.voice .section-title , .collection .section-title {
+    color: white;
+}
+
 .voice {
     position: relative;
     background: linear-gradient(to right, #D2F0D5, #6FB375);
@@ -41,22 +45,26 @@
 }
 
 .voice-text p:first-of-type {
-    margin-bottom: 7px;
+    margin-bottom: 15px;
     text-align: center;
     font-weight: bold;
     font-size: 2rem;
 }
 
+.voice-text p:last-of-type {
+    line-height: 1.5;
+} 
+
 .voice-info {
     text-align: right;
-    margin-bottom: 7px;
+    margin-bottom: 10px;
 }
 
 .voice-info span {
-    
     padding: 5px 10px;
     border-radius: 15px;
     background-color: #FEE688;
+    font-size: 1.4rem;
 }
 
 .voice-info span:last-of-type {
