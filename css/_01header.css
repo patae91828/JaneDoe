@@ -1,49 +1,40 @@
 header {
     display: flex;
-    justify-content: space-between;
-    align-items: top; /* メインビジュアル出来たらボーダー消す */
+    align-items: top;
+    /* メインビジュアル出来たらボーダー消す */
+    padding: 20px 50px;
 }
 
-.header-left h1 {
+.header-logo img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 150px;
-    height: 50px;
-    margin: 50px 60px;
 }
 
 .header-right {
-    margin-top: 50px;
-    margin-right: 200px;
-    width: 820px;
-    margin: auto;
+    display: flex;
+    margin: 0 auto;
 }
 
 .header-right ul {
-    list-style: none;
     display: flex;
-    justify-content: space-between;
-    border: 1px solid gray;
-    border-radius: 60px;
+    gap: 20px;
+    padding: 14px 50px;
+    border-radius: 25px;
+    background-color: white;
+
 }
 
 .header-right a {
-    font-size: 15px;
     color: transparent;
-    background: linear-gradient(to right, #F9E900 50%, #000 50%) 100%;
+    background: linear-gradient(to right, #315098 50%, #000 50%) 100%;
     background-clip: text;
     background-size: 200% 100%;
     transition: background-position 0.3s;
-    margin: 10px;
+    /* margin: 10px; */
 }
 
 .header-right a:hover {
-  background-position: 0 100%;
+    background-position: 0 100%;
 }
-
-.header-right a:first-child {
-    margin-left: 50px;
-}
-
-.header-right a:last-child {
-    margin-right: 50px;
-}
-
