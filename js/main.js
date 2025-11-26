@@ -107,7 +107,7 @@ $(function () {
   $(".collection-slider").slick({
     arrows: false,
     centerMode: true,
-    centerPadding: 0,
+    centerPadding: "0px",
     slidesToShow: 4,
     autoplay: true,
     autoplaySpeed: 3000,
