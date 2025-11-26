@@ -56,7 +56,6 @@ ul {
 .btn_box {
     position: absolute;
     top: 100px;
-    /* 使う際はコメントアウトしてください */
 }
 
 #btn_animation .btn {
