@@ -167,7 +167,8 @@ $(function () {
   プロナビの強み
   ===================================================*/
 const openBtns = document.querySelectorAll('.sp-btn');
-const pages = document.querySelectorAll('.page-modal');
+// const pages = document.querySelectorAll('.page-modal');
+const pages = document.querySelectorAll('.page-modal, .page-modal-img');
 const modalBg = document.getElementById('modal-bg');
 
 openBtns.forEach(btn => {
@@ -175,8 +176,8 @@ openBtns.forEach(btn => {
     const target = btn.dataset.target;
 
     modalBg.style.display = 'block';
-
     modalBg.onclick = closeAll;
+    document.body.classList.add('modal-open');
 
     pages.forEach(p => {
       p.classList.remove('show');
@@ -195,11 +196,36 @@ document.querySelectorAll('.close-btn').forEach(btn => {
 
 function closeAll() {
   modalBg.style.display = 'none';
+  document.body.classList.remove('modal-open');
   pages.forEach(p => {
     p.classList.remove('show');
     p.style.display = 'none';
   });
 }
+
+/*=================================================
+  プロナビの強み-page5page6
+  ===================================================*/
+const imgBtns = document.querySelectorAll('.small-page-img');
+
+imgBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const target = btn.dataset.target;
+
+    modalBg.style.display = 'block';
+    modalBg.onclick = closeAll;
+    document.body.classList.add('modal-open');
+
+    pages.forEach(p => {
+      p.classList.remove('show');
+      p.style.display = 'none';
+    });
+
+    const page = document.getElementById(target);
+    page.style.display = 'block';
+    setTimeout(() => page.classList.add('show'), 10);
+  });
+});
 
   
   /*=================================================

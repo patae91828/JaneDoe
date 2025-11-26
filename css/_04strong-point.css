@@ -79,6 +79,21 @@ sp-list
 
 
 
+
+/*=================================================
+強み専用ページ＿共通
+===================================================*/
+.page-modal,
+.page-modal-img {
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+
 /*=================================================
 強み専用ページ＿外装
 ===================================================*/
@@ -199,7 +214,7 @@ sp-list
 }
 
 /*=================================================
-強み専用ページ＿img-page
+強み専用ページ＿page5page6表示ボタン
 ===================================================*/
 .small-page-img-animation{
     display: inline-block;
@@ -232,6 +247,75 @@ sp-list
     100% {
         transform: scale(1, 0.8);
     }
+}
+
+/*=================================================
+強み専用ページ＿page5page6
+===================================================*/
+.page-modal-img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    max-width: 900px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 14px;
+    transform: translate(-50%, -50%) scale(0.9);
+    display: none;
+    z-index: 1000;
+    transition: transform .25s ease, opacity .25s ease;
+    opacity: 0;
+}
+.page-modal-img.show {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    display: block;
+}
+
+.page-modal-img .number{
+    font-size: 4.0rem;
+    font-weight: bold;
+    color: #497BA1;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.page-modal-img .text{
+    font-size: 3.0rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.page-modal-img .text::before {
+    width: 80px;
+    height: 0.4rem;
+    content: "";
+    position: absolute;
+    text-align: center;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #497BA1;
+}
+
+.small-page-img-img{
+    display: grid;
+    grid-template-columns: repeat(2,2fr);
+    gap: 50px;
+}
+
+.small-content-img{
+    box-shadow: 0 0 8px black;
+    border-radius: 20px;
+}
+
+.small-content-img img{
+    width: 100%;
+    border-radius: 20px;
+    vertical-align: bottom;
 }
 
 
