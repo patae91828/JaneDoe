@@ -1,7 +1,7 @@
-.wrapper{
+/* .wrapper{
     max-width: 954px;
     width: 100%;
-}
+} */
 
 .section-title{
     font-size: 3.0rem;
@@ -69,12 +69,25 @@ sp-list
     margin: 0 auto;
 }
 
-.sp-single .sp-btn{
-    width: 60%;
-    border-radius: 20px;
+.sp-btn{
+    display: inline-block;
     margin: 0 auto;
+    width: 60%;
+    padding-inline: 10px;
     background: linear-gradient(to right, #70B8EE, #497BA1);
     color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+    transition: .3s;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.35);
+}
+
+.sp-btn:hover {
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -105,10 +118,9 @@ body.modal-open {
     height: 100vh;
     background: rgba(0,0,0,0.4);
     display: none;
-    z-index: 999; /* 最前面の一歩手前 */
+    z-index: 999;
 }
 
-/* 白い中央ページ */
 .page-modal {
     position: fixed;
     top: 50%;
@@ -120,19 +132,17 @@ body.modal-open {
     border-radius: 14px;
     transform: translate(-50%, -50%) scale(0.9);
     display: none;
-    z-index: 1000; /* 背景より前 */
+    z-index: 1000;
     transition: transform .25s ease, opacity .25s ease;
     opacity: 0;
 }
 
-/* 表示状態 */
 .page-modal.show {
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
     display: block;
 }
 
-/* ×ボタン */
 .close-btn {
     position: absolute;
     top: 12px;

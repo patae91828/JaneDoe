@@ -3,6 +3,11 @@ header {
     align-items: top;
     /* メインビジュアル出来たらボーダー消す */
     padding: 20px 50px;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    left: 0;
+    top: 0;
 }
 
 .header-logo img {

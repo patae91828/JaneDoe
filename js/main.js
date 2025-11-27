@@ -73,6 +73,16 @@ $(function () {
 
 
 
+  /*=================================================
+  ファーストビュー_animation
+  ===================================================*/
+// アニメーション終了後にコンテナ削除（軽量化）
+setTimeout(() => {
+    const el = document.getElementById("fv-animation");
+    if(el){
+        el.style.display = "none";
+    }
+}, 7000); // アニメーション終了後
 
 
 
@@ -167,7 +177,6 @@ $(function () {
   プロナビの強み
   ===================================================*/
 const openBtns = document.querySelectorAll('.sp-btn');
-// const pages = document.querySelectorAll('.page-modal');
 const pages = document.querySelectorAll('.page-modal, .page-modal-img');
 const modalBg = document.getElementById('modal-bg');
 
