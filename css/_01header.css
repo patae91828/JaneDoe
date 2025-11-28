@@ -29,7 +29,7 @@ header {
 
 .nav-menu a {
     color: transparent;
-    background: linear-gradient(to right, #315098 50%, #000 50%) 100%;
+    background: linear-gradient(to right, #4a7da3 50%, #000 50%) 100%;
     background-clip: text;
     background-size: 200% 100%;
     transition: background-position 0.3s;
@@ -75,8 +75,10 @@ header {
     top: 80%;
 }
 
-.open .toggle-btn span {
-    background-color: #333;
+.header-right a:hover {
+  background-position: 0 100%;
+  font-weight: bold;
+  font-size: 1.7rem;
 }
 
 .open .toggle-btn span:nth-child(1) {
