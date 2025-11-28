@@ -54,6 +54,7 @@ $(function () {
   /*=================================================
     受講生の声、作品集スライダー
   ===================================================*/
+
   $(".voice-slider").slick({
     arrows: true,
     prevArrow: '<button type="button" class="slide-arrow prev-arrow"><span class="slide-arrow__arrow prev-arrow__arrow"></span></button>',
@@ -75,10 +76,11 @@ $(function () {
     ],
   });
 
+
   $(".collection-slider").slick({
     arrows: false,
     centerMode: true,
-    centerPadding: "0px",
+    centerPadding: 0,
     slidesToShow: 4,
     autoplay: true,
     autoplaySpeed: 3000,
@@ -86,12 +88,16 @@ $(function () {
       {
         breakpoint: 768,
         settings: {
+          // ブレークポイント（デバイスの幅が768ピクセル以下の場合）では、
           centerPadding: "50px",
           slidesToShow: 1,
+          // centerPaddingとslidesToShowの値が変更され、中央余白が"50px"に、表示されるスライドの数が1になります。
         },
       },
     ],
   });
+
+
 
 
   /*=================================================
