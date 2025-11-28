@@ -4,8 +4,8 @@
     width: 100%;
 }
 
-.voice .section-title,
-.collection .section-title {
+
+.voice .section-title,.collection .section-title {
     color: white;
 }
 
