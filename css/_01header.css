@@ -2,7 +2,6 @@ header {
     display: flex;
     align-items: center;
     height: 80px;
-    /* メインビジュアル出来たらボーダー消す */
     padding: 20px 50px;
     position: fixed;
     z-index: 10;
@@ -27,22 +26,25 @@ header {
 .nav-menu ul {
     display: flex;
     gap: 20px;
-    padding: 13px 50px;
+    padding: 18px 50px;
     border-radius: 25px;
-    background-color: white;
+    background-color: #f3f1ef;
 }
 
 .nav-menu a {
     color: transparent;
-    background: linear-gradient(to right, #4a7da3 50%, #000 50%) 100%;
+    background: linear-gradient(to right, #009bc6 50%, #000 50%) 100%;
     background-clip: text;
     background-size: 200% 100%;
     transition: background-position 0.3s;
-    /* margin: 10px; */
+
 }
 
 .nav-menu a:hover {
     background-position: 0 100%;
+    font-weight: bold;
+    font-size: 1.8rem;
+
 }
 
 

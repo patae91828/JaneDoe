@@ -1,3 +1,7 @@
+.about .section-title {
+    padding-top: 50px;
+}
+
 .about h2 {
     text-align: center;
     margin-bottom: 50px;
@@ -26,7 +30,7 @@
 }
 
 .about-container img {
-    max-width: 45%;
+    width: 45%;
 }
 
 .about-container {
@@ -34,7 +38,8 @@
     justify-content: space-between;
 }
 
-.emblem-img,.emblem-text {
+
+.emblem,.emblem-text {
     display: flex;
 }
 
@@ -43,7 +48,13 @@
     font-size: 2.5rem;
     font-weight: bolder;
     line-height: 1.5;
+
+    }
+
+.emblem-text span {
+    background: linear-gradient(transparent 70%, #9ed4b1 70%);
 }
+
 
 .back_text {
     width: 640px;
@@ -51,7 +62,7 @@
     
 }
 
-.inner {
+.about-inner {
     text-align: center;
 }
 
@@ -60,9 +71,48 @@
 }
 
 /* レスポンシブ */
-@media(width:440px) {
+@media(max-width:767px) {
+
     .about-container {
         display: flex;
+        flex-direction: column-reverse;
+
+    }
+
+    .about-container img {
+        margin: auto;
+        padding-bottom: 50px;
+    }
+
+    .about-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .last_line {
+        margin-bottom: 30px;
+    }
+
+    .about-inner {
         flex-direction: column;
     }
+
+    .emblem,.emblem-text {
+        flex-direction: column-reverse;
+        
+    }
+
+    .emblem-img {
+        margin-top: 30px;
+    }
+
+    .back_text {
+        margin-top: 0;
+    }
+
+    .emblem-text {
+        margin-top: 30px;
+
 }
+
+
