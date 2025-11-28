@@ -28,7 +28,7 @@ header {
 .header-right a {
     font-size: 15px;
     color: transparent;
-    background: linear-gradient(to right, #F9E900 50%, #000 50%) 100%;
+    background: linear-gradient(to right, #4a7da3 50%, #000 50%) 100%;
     background-clip: text;
     background-size: 200% 100%;
     transition: background-position 0.3s;
@@ -37,6 +37,8 @@ header {
 
 .header-right a:hover {
   background-position: 0 100%;
+  font-weight: bold;
+  font-size: 1.7rem;
 }
 
 .header-right a:first-child {

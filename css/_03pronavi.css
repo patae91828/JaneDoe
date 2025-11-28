@@ -63,6 +63,7 @@
 /* レスポンシブ */
 @media(width:440px) {
     .about-container {
+        display: flex;
         flex-direction: column;
     }
 }
