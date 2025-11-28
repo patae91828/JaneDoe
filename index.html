@@ -33,34 +33,27 @@
 
 <body>
     <header>
-        <div class="header-left">
+        <div class="header-logo">
             <h1><img src="img/logo.png" alt="PRONAVIロゴ"></h1>
         </div>
-        <nav class="header-right">
+        <nav class="nav-menu">
             <ul>
-                <a href="#プロナビとは">
-                    <li>プロナビとは</li>
-                </a>
-                <a href="#プロナビの強み">
-                    <li>プロナビの強み</li>
-                </a>
-                <a href="#受講生の声">
-                    <li>受講生の声</li>
-                </a>
-                <a href="#受講の流れ">
-                    <li>受講の流れ</li>
-                </a>
-                <a href="#料金/期間">
-                    <li>料金/期間</li>
-                </a>
-                <a href="#よくある質問">
-                    <li>よくある質問</li>
-                </a>
-                <a href="#会社概要">
-                    <li>会社概要</li>
-                </a>
+                <li><a href="#about">プロナビとは</a></li>
+                <li><a href="#strong-point">プロナビの強み</a></li>
+                <li><a href="#voice">受講生の声</a></li>
+                <li><a href="#flow">受講の流れ</a></li>
+                <li><a href="#price">料金/期間</a></li>
+                <li><a href="#question">よくある質問</a></li>
+                <li><a href="#company">会社概要</a></li>
             </ul>
         </nav>
+
+        <div class="toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
     </header>
 
     <main>
@@ -276,7 +269,7 @@
 
 
         <img src="img/wave-top.png" alt="wave-top" class="wave-top">
-        <section class="voice">
+        <section class="voice" id="voice">
             <div class="wrapper-voice">
                 <h2 class="section-title">受講者の声</h2>
                 <div class="voice-slider">
@@ -366,16 +359,16 @@
         <img src="img/wave-bottom.png" alt="" class="wave-bottom">
 
 
-        <section class="flow">
+        <section id="flow" class="flow">
             <h2 class="section-title">受講の流れ</h2>
             <div class="wrapper">
                 <div class="flow-inner">
                     <div class="flow-items">
                         <div class="flow-item odd-number">
                             <img src="img/flow1.png" alt="flow1" class="flow-img">
-                            <div class="flow-text">
+                            <div class="flow-text first-text">
                                 <span>面談</span>
-                                <span>入校 / 手続き</span>
+                                <span>入校/手続き</span>
                                 <span>目標設定</span>
                             </div>
                         </div>
@@ -396,10 +389,9 @@
                         </div>
                         <div class="flow-item even-number">
                             <img src="img/flow4.png" alt="flow1" class="flow-img">
-                            <div class="flow-text">
+                            <div class="flow-text forth-text">
                                 <span>WordPress</span>
-                                <span>オリジナルサイト
-                                    制作</span>
+                                <span>オリジナルサイト制作</span>
                             </div>
                         </div>
                     </div>
@@ -419,10 +411,9 @@
                     </div>
                 </div>
             </div>
-
         </section>
 
-        <section class="step wrapper">
+        <section class="step wrapper" id="step">
             <h2 class="section-title">無料カウンセリング</h2>
 
             <div class="step_text">
@@ -585,25 +576,25 @@
                 <img src="img/logo.png" alt="PRONAVIロゴ">
                 <nav>
                     <ul>
-                        <a href="#プロナビとは">
+                        <a href="#about">
                             <li>プロナビとは</li>
                         </a>
-                        <a href="#プロナビの強み">
+                        <a href="#strong-point">
                             <li>プロナビの強み</li>
                         </a>
-                        <a href="#受講生の声">
+                        <a href="#voice">
                             <li>受講生の声</li>
                         </a>
-                        <a href="#受講の流れ">
+                        <a href="#flow">
                             <li>受講の流れ</li>
                         </a>
-                        <a href="#料金/期間">
+                        <a href="#price">
                             <li>料金/期間</li>
                         </a>
-                        <a href="#よくある質問">
+                        <a href="#question">
                             <li>よくある質問</li>
                         </a>
-                        <a href="#会社概要">
+                        <a href="#company">
                             <li>会社概要</li>
                         </a>
                     </ul>
@@ -630,6 +621,7 @@
         <div class="copyright">
             <small>&copy; 2025 Jane Doe</small>
         </div>
+        <a href="#" class="cta-btn">無料 <br>カウンセリングを <br>予約する</a>
     </footer>
 
     <!-- プラグイン「slick」のjsを読み込む -->

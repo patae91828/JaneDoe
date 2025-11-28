@@ -4,7 +4,8 @@
     width: 100%;
 }
 
-.voice .section-title , .collection .section-title {
+.voice .section-title,
+.collection .section-title {
     color: white;
 }
 
@@ -53,7 +54,7 @@
 
 .voice-text p:last-of-type {
     line-height: 1.5;
-} 
+}
 
 .voice-info {
     text-align: right;
@@ -97,7 +98,7 @@
     cursor: pointer;
     position: absolute;
     top: 50%;
-    left: 66%;
+    /* left: 66%; */
     transform: translateY(-50%);
     z-index: 20;
     display: flex;
@@ -107,6 +108,10 @@
 
 .prev-arrow {
     left: 29%;
+}
+
+.next-arrow {
+    left: 66%;
 }
 
 .prev-arrow::before,
@@ -127,4 +132,17 @@
 .prev-arrow::before {
     transform: translate(-40%, -50%) rotate(-135deg);
 
+}
+
+@media (max-width: 768px) {
+
+    .prev-arrow {
+        left: 5%;
+    }
+
+    .next-arrow {
+    left: 85%;
+    
+   
+}
 }

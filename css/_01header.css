@@ -1,38 +1,78 @@
 header {
     display: flex;
-    justify-content: space-between;
-    align-items: top; /* メインビジュアル出来たらボーダー消す */
+    align-items: center;
+    height: 80px;
+    /* メインビジュアル出来たらボーダー消す */
+    padding: 20px 50px;
+
 }
 
-.header-left h1 {
-    width: 150px;
-    height: 50px;
-    margin: 50px 60px;
+.header-logo img {
+    position: absolute;
+    top: 22px;
+    width: 120px;
+    z-index: 30;
 }
 
-.header-right {
-    margin-top: 50px;
-    margin-right: 200px;
-    width: 820px;
-    margin: auto;
-}
-
-.header-right ul {
-    list-style: none;
+.nav-menu {
     display: flex;
-    justify-content: space-between;
-    border: 1px solid gray;
-    border-radius: 60px;
+    margin: 0 auto;
 }
 
-.header-right a {
-    font-size: 15px;
+.nav-menu ul {
+    display: flex;
+    gap: 20px;
+    padding: 13px 50px;
+    border-radius: 25px;
+    background-color: white;
+}
+
+.nav-menu a {
     color: transparent;
     background: linear-gradient(to right, #4a7da3 50%, #000 50%) 100%;
     background-clip: text;
     background-size: 200% 100%;
     transition: background-position 0.3s;
-    margin: 10px;
+    /* margin: 10px; */
+}
+
+.nav-menu a:hover {
+    background-position: 0 100%;
+}
+
+
+.toggle-btn {
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    top: 25px;
+    right: 16px;
+    transition: 0.5s;
+    z-index: 20;
+    opacity: 1;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.toggle-btn span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    transition: all 0.5s;
+    position: absolute;
+}
+
+.toggle-btn span:nth-child(1) {
+    top: 20%;
+}
+
+.toggle-btn span:nth-child(2) {
+    top: 50%;
+}
+
+.toggle-btn span:nth-child(3) {
+    top: 80%;
 }
 
 .header-right a:hover {
@@ -41,11 +81,57 @@ header {
   font-size: 1.7rem;
 }
 
-.header-right a:first-child {
-    margin-left: 50px;
+.open .toggle-btn span:nth-child(1) {
+    top: 50%;
+    transform: rotate(-45deg);
 }
 
-.header-right a:last-child {
-    margin-right: 50px;
+.open .toggle-btn span:nth-child(2) {
+    transform: rotate(45deg);
 }
 
+.open .toggle-btn span:nth-child(3) {
+    top: 50%;
+    transform: rotate(45deg);
+}
+
+@media (max-width:768px) {
+
+    .header-logo img {
+        left: 3%;
+    }
+
+    .toggle-btn {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        visibility: hidden;
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        transition: all 0.5s;
+    }
+
+    .open nav {
+        opacity: 1;
+        visibility: visible;
+        z-index: 20;
+        transition: all 0.5s;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        position: fixed;
+        top: 80px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+
+}
