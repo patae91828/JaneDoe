@@ -1,9 +1,4 @@
-
-
-
-
 .question{
-    border: 1px solid;
     text-align: center;
     padding-block: 50px 120px;
     background-color: #F3F1EF;
@@ -12,7 +7,7 @@
 .q-and-a-list{
     text-align: left;
     padding: 20px 60px;
-    line-height: 40px;
+    line-height: 30px;
     background-color: white;
     border-radius: 20px;
     margin-bottom: 40px;
@@ -20,6 +15,7 @@
 
 .list-question{
     position: relative;
+    padding-bottom: 10px;
 }
 
 .list-question span{
@@ -33,7 +29,7 @@
     font-size: 1rem;
     text-align: center;
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: -45px;
 }
 
@@ -41,6 +37,7 @@
     border-top: 1px solid;
     position: relative;
     display: none;
+    padding-top: 10px;
 }
 
 .list-answer span{
@@ -54,11 +51,15 @@
     font-size: 1rem;
     text-align: center;
     position: absolute;
-    bottom: 0;
+    top: 7px;
     left: -45px;
 }
 
-/* アコーディオン_矢印 */
+
+
+/*=================================================
+アコーディオン_矢印
+===================================================*/
 .list-question {
     position: relative;
     cursor: pointer;

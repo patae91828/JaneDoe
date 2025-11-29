@@ -1,8 +1,3 @@
-/* .wrapper{
-    max-width: 954px;
-    width: 100%;
-} */
-
 .section-title{
     font-size: 3.0rem;
     margin-bottom: 50px;
@@ -14,7 +9,6 @@
 strong-point
 ===================================================*/
 .strong-point{
-    border: 1px solid;
     text-align: center;
     padding-block: 50px 160px;
     background-color: #F3F1EF;
@@ -58,7 +52,7 @@ sp-list
 }
 
 .sp-single .text{
-    font-size: 3.0rem;
+    font-size: 2.5rem;
     font-weight: bold;
 }
 
@@ -192,6 +186,10 @@ body.modal-open {
 
 .small-content{
     box-shadow: 0 0 8px black;
+    border-radius: 20px;
+}
+
+#page1 .small-content img{
     border-radius: 20px;
 }
 
@@ -367,4 +365,26 @@ body.modal-open {
 
 .movie-btn:hover {
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/*=================================================
+レスポンシブ
+===================================================*/
+@media(max-width:768px){
+    .sp-list{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .small-page{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .small-page-img-img{
+        display: flex;
+        flex-direction: column;
+    }
 }
