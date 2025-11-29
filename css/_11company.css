@@ -17,14 +17,15 @@ background-color: white;
 .company-inner dl {
     display: flex;
     flex-wrap: wrap;
+    width: 50%;
 }
 
 .company-inner dt {
-    width: 25%;
+    width: 30%;
 }
 
 .company-inner dd {
-    width: 75%;
+    width: 70%;
 }
 
 
@@ -33,11 +34,34 @@ background-color: white;
 }
 
 .map iframe {
-    max-width: 480px;
+    width: 100%;
     height: 250px;
     border-radius: 15px;
 }
 
 .company-inner h3 {
     font: 1.6rem normal;
+}
+
+@media(max-width:767px) {
+
+.company-inner {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.company-inner dd {
+    padding-bottom: 20px;
+}
+
+.company-inner h3 {
+    margin-bottom: 40px;
+}
+
+.map {
+    width: 80%;
+}
+
 }
