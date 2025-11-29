@@ -27,7 +27,7 @@ mainvisual
 #fv-animation{
     position: fixed;
     inset: 0;
-    background: #ffffff;
+    background: #F3F1EF;
     z-index: 9999;
     overflow: hidden;
 }
@@ -55,6 +55,7 @@ mainvisual
     animation: mv-fadein 2.5s ease forwards;
     animation-delay: 6.0s;
 }
+
 
 @keyframes logo-move {
     0% { 
