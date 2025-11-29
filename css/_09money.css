@@ -7,7 +7,6 @@
 
 .price-text {
     margin-inline: 277px;
-    width: 100%;
     max-width: 954px;
     height: 350px;
     background-color: white;
@@ -43,3 +42,9 @@
     padding-top: 50px;
 }
 
+@media(max-width:767px) {
+
+    .price-text {
+        margin-inline: 50px;
+    }
+}

@@ -1,7 +1,8 @@
 footer {
     background: white url(../img/footer.png);
     background-size: cover;
-    height: 430px;
+    height: 100%;
+
 }
 
 .footer-box {
@@ -12,7 +13,7 @@ footer {
 
 
 .footer-left {
-    width: 30%;
+    max-width: 50%;
 }
 
 .footer-left ul {
@@ -62,8 +63,8 @@ footer {
     padding-top: 30px;
 }
 
-.copyright small {
-    margin-top: 30px;
+.copyright {
+    padding-block: 30px;
 }
 
 .cta-btn {
@@ -80,7 +81,26 @@ footer {
     bottom: 25px;
 }
 
-@media (max-width: 768px) {
+@media(max-width:767px) {
+
+    .footer-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-right {
+        position: static;
+    }
+
+    .footer-left ul {
+        padding-bottom: 40px;
+    }
+
+    .container {
+        column-gap: 60px;
+        padding-bottom: 70px;
+    }
+
     .cta-btn {
         width: 100px;
         height: 100px;
