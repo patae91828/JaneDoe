@@ -13,6 +13,7 @@ mainvisual
     transform: translate(-50%,-50%);
     text-align: center;
     font-size: 5.0rem;
+    width: 100%;
 }
 
 .mainvisual img{
@@ -94,5 +95,39 @@ mainvisual
         opacity: 1;
         filter: blur(0) brightness(1);
         transform: scale(1);
+    }
+}
+
+
+/* ===========================
+mainvisualキャッチコピー
+=========================== */
+.mainvisual .text p{
+    font-family: "Noto Sans JP", "Hiragino Sans", "Yu Gothic", sans-serif;
+    font-weight: 500;
+    color: #333;
+    font-size: 5.0rem;
+    line-height: 1.6;
+    letter-spacing: 0.05em;
+    text-shadow: 0 4px 18px rgba(0,0,0,0.15);
+    animation: text-fade 2.8s ease forwards;
+    opacity: 0;
+}
+
+@keyframes text-fade {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+
+
+/* ===========================
+レスポンシブ
+=========================== */
+@media (max-width: 768px) {
+    .mainvisual .text p {
+        font-size: 3.0rem;
+        line-height: 1.6;
+        letter-spacing: 0.03em;
     }
 }
