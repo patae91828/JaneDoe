@@ -27,6 +27,7 @@ ul {
 .wrapper {
     max-width: 954px;
     margin: 0 auto;
+    padding-inline: 30px;
 }
 
 
