@@ -5,6 +5,7 @@ img {
 .step-content {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .step_text {
@@ -65,6 +66,12 @@ img {
     border-radius: 78px;
     animation: btn_animation 1s infinite;
 }
+
+#btn_animation .btn:hover {
+    opacity: 0.5;
+}
+
+
 
 .btn-inner {
     position: relative;

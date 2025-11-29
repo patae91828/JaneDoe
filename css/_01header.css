@@ -27,7 +27,29 @@ header {
     gap: 20px;
     padding: 18px 50px;
     border-radius: 25px;
-    background-color: white;
+    background-color: #fffff9;
+
+}
+
+/* 下線のスタイル */
+.nav-menu a::after {
+  background-color: #333; /* 下線の色 */
+  bottom: -4px; /* 要素の下端からの距離 */
+  content: ""; /* 要素に内容を追加 */
+  height: 2.5px; /* 下線の高さ */
+  left: 0; /* 要素の左端からの距離 */
+  position: absolute; /* 絶対位置指定 */
+  transform: scale(0, 1); /* 下線を横方向に0倍、縦方向に1倍に変形（非表示） */
+  transform-origin: center top; /* 変形の原点を中央上に指定 */
+  transition: transform .3s; /* 変形をアニメーション化 */
+  width: 100%; /* 要素の幅 */
+  background-color: #497ba1;
+}
+/* リンクにホバーした際の下線の表示 */
+.nav-menu a:hover::after {
+  transform: scale(0.6, 0.6);
+   /* 下線を横方向に1倍、縦方向に1倍に変形（表示） */
+  
 }
 
 .nav-menu a {
@@ -36,13 +58,13 @@ header {
     background-clip: text;
     background-size: 200% 100%;
     transition: background-position 0.3s;
-
+    display: inline-block;
+    position: relative;
 }
 
 .nav-menu a:hover {
     background-position: 0 100%;
     font-weight: bold;
-    font-size: 1.8rem;
 
 }
 
