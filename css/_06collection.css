@@ -10,7 +10,7 @@ body {
 }
 
 .collection-slider img {
-    margin: 0 auto;
+    width: 100%;
     border-radius: 15px;
     /* box-shadow: 0 0 8px black; */
     box-shadow: 4px 4px 10px 4px rgba(0, 0, 0, 0.3);
@@ -21,6 +21,11 @@ body {
     margin-bottom: 80px;
 }
 
+.collection-slider .slick-slide {
+margin: 0 15px;
+}
+
+/* もっと見るボタン */
 .view-more-btn {
     text-align: right;
 }
@@ -79,12 +84,9 @@ body {
 
 @media (max-width: 768px) {
 
-.wrapper-collection {
+    .wrapper-collection {
         /* ★修正1: max-widthを解除またはモバイルの最大幅に変更 */
         max-width: 100%; /* または max-width: 768px; */
-        
-      
-        /* もし .wrapper にも max-width があれば、それも同様に解除が必要な場合があります */
     }
 
     .view-more-btn a {

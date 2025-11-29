@@ -88,6 +88,10 @@
 
 
 /* slick矢印カスタマイズ */
+.slick-center .voice-item {
+    position: relative;
+}
+
 .prev-arrow,
 .next-arrow {
     width: 55px;
@@ -100,18 +104,17 @@
     top: 50%;
     /* left: 66%; */
     transform: translateY(-50%);
-    z-index: 20;
+    z-index: 10;
     display: flex;
     justify-content: center;
 }
-
 
 .prev-arrow {
     left: 29%;
 }
 
 .next-arrow {
-    left: 66%;
+    right: 29%;
 }
 
 .prev-arrow::before,
@@ -136,13 +139,21 @@
 
 @media (max-width: 768px) {
 
+    .voice {
+        padding-bottom: 80px;
+    }
+
+.voice-text p:first-of-type {
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+    /* sp 矢印カスタマイズ */
     .prev-arrow {
         left: 5%;
     }
 
     .next-arrow {
-    left: 85%;
-    
-   
-}
+        right: 5%;
+    }
 }

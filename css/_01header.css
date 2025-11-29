@@ -5,7 +5,7 @@ header {
     /* メインビジュアル出来たらボーダー消す */
     padding: 20px 50px;
     position: fixed;
-    z-index: 10;
+    z-index: 20;
     width: 100%;
     left: 0;
     top: 0;
@@ -81,9 +81,9 @@ header {
 }
 
 .header-right a:hover {
-  background-position: 0 100%;
-  font-weight: bold;
-  font-size: 1.7rem;
+    background-position: 0 100%;
+    font-weight: bold;
+    font-size: 1.7rem;
 }
 
 .open .toggle-btn span:nth-child(1) {
