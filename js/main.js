@@ -62,8 +62,10 @@ $(function () {
     centerMode: true,
     centerPadding: "0",
     slidesToShow: 3,
-    autoplay: false,
-    autoplaySpeed: 3000,
+    autoplay: true,
+    autoplaySpeed: 6000,
+    speed: 600,
+    cssEase: "ease-in-out",
     responsive: [
       {
         breakpoint: 768,

@@ -1,7 +1,9 @@
 @charset "UTF-8";
 
 .flow {
-    margin-bottom: 160px;
+    padding-top: 100px;
+
+    margin-block:-50px 160px;
 }
 
 .wrapper-flow {

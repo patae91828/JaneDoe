@@ -1,5 +1,4 @@
-
-.section-title{
+.section-title {
     font-size: 3.0rem;
     margin-bottom: 50px;
 }
@@ -9,14 +8,14 @@
 /*=================================================
 strong-point
 ===================================================*/
-.strong-point{
+.strong-point {
     text-align: center;
     padding-block: 100px 160px;
     margin-top: -50px;
     background-color: #F3F1EF;
 }
 
-.strong-point .section-title span{
+.strong-point .section-title span {
     font-size: 4.0rem;
     color: #2453A1;
 }
@@ -26,15 +25,15 @@ strong-point
 /*=================================================
 sp-list
 ===================================================*/
-.sp-list{
+.sp-list {
     display: grid;
-    grid-template-columns: repeat(2,2fr);
+    grid-template-columns: repeat(2, 2fr);
     text-align: center;
     gap: 80px;
     margin-bottom: 50px;
 }
 
-.sp-single{
+.sp-single {
     position: relative;
     box-shadow: 0 0 8px black;
     border-radius: 20px;
@@ -44,7 +43,7 @@ sp-list
     background-color: white;
 }
 
-.sp-single .number{
+.sp-single .number {
     font-size: 4.0rem;
     font-weight: bold;
     color: #497BA1;
@@ -53,19 +52,19 @@ sp-list
     left: 30px;
 }
 
-.sp-single .text{
+.sp-single .text {
     font-size: 2.5rem;
     font-weight: bold;
 }
 
-.sp-single img{
+.sp-single img {
     aspect-ratio: 1 / 1;
     object-fit: contain;
     width: 60%;
     margin: 0 auto;
 }
 
-.sp-btn{
+.sp-btn {
     display: inline-block;
     margin: 0 auto;
     width: 60%;
@@ -79,7 +78,7 @@ sp-list
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
     transition: .3s;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.35);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
 }
 
 .sp-btn:hover {
@@ -112,7 +111,7 @@ body.modal-open {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0, 0, 0, 0.4);
     display: none;
     z-index: 999;
 }
@@ -152,7 +151,7 @@ body.modal-open {
 /*=================================================
 強み専用ページ＿内装
 ===================================================*/
-.page-modal .number{
+.page-modal .number {
     font-size: 4.0rem;
     font-weight: bold;
     color: #497BA1;
@@ -161,7 +160,7 @@ body.modal-open {
     left: 30px;
 }
 
-.page-modal .text{
+.page-modal .text {
     font-size: 3.0rem;
     font-weight: bold;
     margin-bottom: 25px;
@@ -180,45 +179,45 @@ body.modal-open {
     background-color: #497BA1;
 }
 
-.small-page{
+.small-page {
     display: grid;
-    grid-template-columns: repeat(2,2fr);
+    grid-template-columns: repeat(2, 2fr);
     gap: 50px;
 }
 
-.small-content{
+.small-content {
     box-shadow: 0 0 8px black;
     border-radius: 20px;
 }
 
-#page1 .small-content img{
+#page1 .small-content img {
     border-radius: 20px;
 }
 
-.small-content h4{
+.small-content h4 {
     padding-block: 15px;
     color: white;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.35);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
     border-radius: 20px 20px 0 0;
 }
 
-.small-content:nth-child(1) h4{
+.small-content:nth-child(1) h4 {
     background-color: #92CB97;
 }
 
-.small-content:nth-child(2) h4{
+.small-content:nth-child(2) h4 {
     background-color: #FFD60E;
 }
 
-.small-content:nth-child(3) h4{
+.small-content:nth-child(3) h4 {
     background-color: #3B82C4;
 }
 
-.small-content:nth-child(4) h4{
+.small-content:nth-child(4) h4 {
     background-color: #FCC043;
 }
 
-.small-content p{
+.small-content p {
     padding: 15px 20px;
     text-align: left;
 }
@@ -226,16 +225,17 @@ body.modal-open {
 /*=================================================
 強み専用ページ＿page5page6表示ボタン
 ===================================================*/
-.small-page-img-animation{
+.small-page-img-animation {
     display: inline-block;
     margin-bottom: 25px;
 }
+
 .small-page-img {
     display: block;
     width: 400px;
     height: 40px;
     font-size: 2.0rem;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.35);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
     line-height: 40px;
     text-decoration: none;
     background: linear-gradient(to right, #70B8EE, #497BA1);
@@ -244,16 +244,20 @@ body.modal-open {
     border-radius: 78px;
     animation: btn_animation 1s infinite;
 }
+
 @keyframes small-page-img-animation {
     0% {
         transform: scale(1, 0.8);
     }
+
     20% {
         transform: scale(0.8, 1.1);
     }
+
     95% {
         transform: scale(1, 1);
     }
+
     100% {
         transform: scale(1, 0.8);
     }
@@ -277,13 +281,14 @@ body.modal-open {
     transition: transform .25s ease, opacity .25s ease;
     opacity: 0;
 }
+
 .page-modal-img.show {
     transform: translate(-50%, -50%) scale(1);
     opacity: 1;
     display: block;
 }
 
-.page-modal-img .number{
+.page-modal-img .number {
     font-size: 4.0rem;
     font-weight: bold;
     color: #497BA1;
@@ -292,7 +297,7 @@ body.modal-open {
     left: 30px;
 }
 
-.page-modal-img .text{
+.page-modal-img .text {
     font-size: 3.0rem;
     font-weight: bold;
     margin-bottom: 25px;
@@ -311,18 +316,18 @@ body.modal-open {
     background-color: #497BA1;
 }
 
-.small-page-img-img{
+.small-page-img-img {
     display: grid;
-    grid-template-columns: repeat(2,2fr);
+    grid-template-columns: repeat(2, 2fr);
     gap: 50px;
 }
 
-.small-content-img{
+.small-content-img {
     box-shadow: 0 0 8px black;
     border-radius: 20px;
 }
 
-.small-content-img img{
+.small-content-img img {
     width: 100%;
     border-radius: 20px;
     vertical-align: bottom;
@@ -387,25 +392,25 @@ LINEQR専用ページ＿page7
 /*=================================================
 申し込みボタン
 ===================================================*/
-.sp-apply{
+.sp-apply {
     display: inline-block;
     margin-bottom: 50px;
 }
 
-.sp-apply .contact-btn{
-    width: 400px;
+.sp-apply .contact-btn {
+   width: 400px;
+   height: 50px;
+    font-size: 1.8rem;
 }
-
-
 
 /*=================================================
 動画ボタン
 ===================================================*/
-.movie-btn{
+.movie-btn {
     display: inline-block;
     margin: 0 auto;
     width: 400px;
-    height: 60px;
+    height: 70px;
     padding-inline: 10px;
     background: linear-gradient(to right, #70B8EE, #497BA1);
     color: white;
@@ -416,7 +421,8 @@ LINEQR専用ページ＿page7
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
     transition: .3s;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.35);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
+    font-size: 1.8rem;
 }
 
 .movie-btn:hover {
@@ -428,18 +434,18 @@ LINEQR専用ページ＿page7
 /*=================================================
 レスポンシブ
 ===================================================*/
-@media(max-width:768px){
-    .sp-list{
+@media(max-width:768px) {
+    .sp-list {
         display: flex;
         flex-direction: column;
     }
 
-    .small-page{
+    .small-page {
         display: flex;
         flex-direction: column;
     }
 
-    .small-page-img-img{
+    .small-page-img-img {
         display: flex;
         flex-direction: column;
     }

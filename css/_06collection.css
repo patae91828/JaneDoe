@@ -22,7 +22,7 @@ body {
 }
 
 .collection-slider .slick-slide {
-margin: 0 15px;
+    margin: 0 15px;
 }
 
 /* もっと見るボタン */
@@ -37,8 +37,11 @@ margin: 0 15px;
     border-radius: 15px;
     color: white;
     background: linear-gradient(to right, #70B8EE, #497BA1);
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: .3s;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
     overflow: hidden;
+
 }
 
 .view-more-btn a::before {
@@ -51,6 +54,10 @@ margin: 0 15px;
     background-color: rgba(255, 255, 255, 0.8);
     opacity: 0;
     transform: skewX(-25deg);
+}
+
+.view-more-btn a:hover {
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
 }
 
 .view-more-btn a:hover::before {
@@ -86,7 +93,8 @@ margin: 0 15px;
 
     .wrapper-collection {
         /* ★修正1: max-widthを解除またはモバイルの最大幅に変更 */
-        max-width: 100%; /* または max-width: 768px; */
+        max-width: 100%;
+        /* または max-width: 768px; */
     }
 
     .view-more-btn a {

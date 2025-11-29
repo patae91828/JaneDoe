@@ -101,7 +101,7 @@ header {
     transform: rotate(45deg);
 }
 
-@media (max-width:768px) {
+@media (max-width:1168px) {
 
     .header-logo img {
         left: 3%;

@@ -1,6 +1,7 @@
 .question{
     text-align: center;
-    padding-block: 50px 120px;
+    padding-block: 100px 120px;
+    margin-top: -50px;
     background-color: #F3F1EF;
 }
 
