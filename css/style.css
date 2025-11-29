@@ -185,6 +185,7 @@ header {
 
 .nav-menu a:hover {
     background-position: 0 100%;
+    font-weight: bold;
 }
 
 .toggle-btn {
@@ -420,8 +421,7 @@ mainvisual_text wipe animation
     position: absolute;
     width: 100%;
     text-shadow: 0 4px 18px rgba(0, 0, 0, 0.15);
-    color: #333;
-    /* color: #497BA1; */
+    color:#3AACAD;
     padding: 0 2rem;
     top: 0;
     left: 0;
@@ -612,6 +612,7 @@ sp-list
     display: inline-block;
     margin: 0 auto;
     width: 60%;
+    height: 40px;
     padding-inline: 10px;
     background: linear-gradient(to right, #70B8EE, #497BA1);
     color: white;
@@ -1417,6 +1418,7 @@ img {
     flex-direction: column;
     align-items: center;
     max-width: 190px;
+    width: 100%;
 }
 
 .step-box {
@@ -1494,7 +1496,7 @@ img {
 =============================================*/
 .price {
     padding: 30px;
-    margin-top: 200px;
+    margin-top: 250px;
     background-image: url(../img/price-bg.png);
     background-size: cover;
     height: 700px;
@@ -1687,14 +1689,13 @@ footer {
     height: 100%;
 }
 
-.footer-box {
+.footer-box{
     display: flex;
-    position: relative;
-    text-align: center;
+    justify-content: space-between;
 }
 
-.footer-left {
-    max-width: 50%;
+.footer-box {
+    text-align: center;
 }
 
 .footer-left ul {
@@ -1710,11 +1711,11 @@ footer {
 .footer-left img {
     margin-block: 115px 36px;
 }
+.footer-right p:nth-child(1) {
+    margin-block: 180px 20px;
+}
 
 .footer-right {
-    position: absolute;
-    bottom: 10px;
-    right: 0;
     text-align: center;
 }
 
@@ -1726,11 +1727,6 @@ footer {
     display: flex;
     text-align: center;
     column-gap: 20px;
-}
-
-.content-1,
-.content-2 {
-    padding-top: 20px;
 }
 
 .content-1 img,
@@ -1767,8 +1763,6 @@ footer {
 /* =========================================
 レスポンシブ
 =============================================*/
-
-
 /* -----------------------------------
 sp-header
 -------------------------------------- */
@@ -1835,8 +1829,7 @@ sp-header
 
     /* --------------------------------
 sp-mainvisual
-----------------------------------------
-*/
+----------------------------------------*/
 .fancy-wipe-container span{
         font-size: 3.0rem;
     }
@@ -1844,7 +1837,6 @@ sp-mainvisual
     /* --------------------------------------
 sp プロナビとは
 ------------------------------------------*/
-   
 .about .section-title {
     padding-top: 0;
 }
@@ -2039,7 +2031,6 @@ sp 会社概要
 
     .company-inner dl {
         width: 90%;
-        /* flex-direction: column; */
     }
 
     .company-inner dd {
@@ -2071,9 +2062,12 @@ sp footer
         padding-bottom: 40px;
     }
 
+    .footer-right p:nth-child(1) {
+        margin-block: 50px 20px;
+}
+
     .container {
         column-gap: 60px;
-        padding-bottom: 70px;
     }
 
     .cta-btn {

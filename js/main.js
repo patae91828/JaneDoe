@@ -41,13 +41,17 @@ $(function () {
   ===================================================*/
   let ctabtn = $(".cta-btn");
   ctabtn.hide();
-
+  const footer = $("footer");
+  const windowHeight = $(window).height();
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 700) {
-      ctabtn.fadeIn();
-    } else {
-      ctabtn.fadeOut();
-    }
+      const scrollPosition = $(this).scrollTop();
+      const footerTop = footer.offset().top; 
+      const threshold = footerTop - windowHeight;
+      if (scrollPosition > 700 && scrollPosition < threshold) {
+          ctabtn.fadeIn();
+      } else {
+          ctabtn.fadeOut();
+      }
   });
 
 
