@@ -6,16 +6,6 @@ mainvisual
     position: relative;
 }
 
-.mainvisual .text{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
-    font-size: 5.0rem;
-    width: 100%;
-}
-
 .mainvisual img{
     height: 100vh;
     width: 100%;
@@ -121,26 +111,9 @@ mainvisualキャッチコピー
 }
 
 
-
-/* ===========================
-レスポンシブ
-=========================== */
-@media (max-width: 768px) {
-    .mainvisual .text p {
-        font-size: 3.0rem;
-        line-height: 1.6;
-        letter-spacing: 0.03em;
-    }
-}
-
-
 /*============================
-
+mainvisual_text wipe animation
 =============================*/
-/*============================
- text wipe animation
-=============================*/
-
 .fancy-wipe-container {
     position: absolute;
     top: 50%;
@@ -166,23 +139,23 @@ mainvisualキャッチコピー
 }
 
 .fancy-wipe-container span {
-    display: block;
+    display: inline-block;
     position: absolute;
     width: 100%;
-    color: white;
+    text-shadow: 0 4px 18px rgba(0,0,0,0.15);
+    color: #333;
+    /* color: #497BA1; */
     padding: 0 2rem;
     top: 0;
     left: 0;
+    transform: translate(0, -50%);
 }
 
-/* ベース文字（背景色に関係なく読める土台） */
 .text-base {
     color: white;
-    /* opacity: 0.35; */
     font-weight: 700;
 }
 
-/* カラーテキスト（マスクで横へ流れる） */
 .wipe-in {
     background-image: var(--colors);
     -webkit-background-clip: text;
@@ -195,7 +168,6 @@ mainvisualキャッチコピー
     mask-position: 100% 0px;
 }
 
-/* ブラーで後ろに残像のような光を出す */
 .blur-in {
     background-image: var(--colors);
     -webkit-background-clip: text;
@@ -210,7 +182,6 @@ mainvisualキャッチコピー
     mask-position: 100% 0px;
 }
 
-/* アニメーション */
 @keyframes wipe-in {
     100% {
         mask-position: 0px 0px;
@@ -218,10 +189,10 @@ mainvisualキャッチコピー
 }
 
 /*============================
- スマホ対応
+スマホ対応
 =============================*/
 @media (max-width: 768px){
-    .fancy-wipe-container{
+    .fancy-wipe-container span{
         font-size: 3.0rem;
     }
 }
