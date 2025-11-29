@@ -228,12 +228,15 @@ body.modal-open {
 .small-page-img-animation {
     display: inline-block;
     margin-bottom: 25px;
+    width: 100%;
 }
 
 .small-page-img {
     display: block;
-    width: 400px;
-    height: 40px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 400px;
+    height: 50px;
     font-size: 2.0rem;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.35);
     line-height: 40px;
