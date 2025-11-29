@@ -114,8 +114,8 @@ $(function () {
   /*=================================================
     プロナビの強み（テキスト & 画像）
   ===================================================*/
-  const openBtns = document.querySelectorAll('.sp-btn, .small-page-img');
-  const pages = document.querySelectorAll('.page-modal, .page-modal-img');
+  const openBtns = document.querySelectorAll('.sp-btn, .small-page-img, .contact-btn, .btn, .cta-btn');
+  const pages = document.querySelectorAll('.page-modal, .page-modal-img, .page-modal-apply');
   const modalBg = document.getElementById('modal-bg');
 
   openBtns.forEach(btn => {
