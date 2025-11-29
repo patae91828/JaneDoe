@@ -2,7 +2,7 @@ footer {
     background: white url(../img/footer.png);
     background-size: cover;
     height: 100%;
-    
+
 }
 
 .footer-box {
@@ -75,10 +75,9 @@ footer {
     background-color: #FFD60E;
     color: white;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
-
     border-radius: 50%;
     position: fixed;
-    right: 25px;
+    right: 3%;
     bottom: 25px;
 }
 
@@ -102,4 +101,11 @@ footer {
         padding-bottom: 70px;
     }
 
+    .cta-btn {
+        width: 100px;
+        height: 100px;
+        padding: 30px 10px;
+        font-size: 1.0rem;
+    }
 }
+

@@ -1,22 +1,27 @@
 @charset "UTF-8";
 
 .flow {
-    margin-bottom: 160px;
+    padding-top: 100px;
+
+    margin-block:-50px 160px;
 }
 
-.wrapper {
-    max-width: 954px;
+.wrapper-flow {
+    max-width: 1080px;
     margin: 0 auto;
+    padding-top: 30px;
 }
 
-.flow-inner {
-    display: flex;
-    gap: 70px;
+.flow-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .flow-item {
     position: relative;
     margin-bottom: 20px;
+    width: 100%;
+    max-width: 250px;
 }
 
 .flow-text {
@@ -27,27 +32,30 @@
     top: 30%;
     left: 50%;
     transform: translateX(-50%);
-}
 
-.first-text , .forth-text {
-    top: 25%;
 }
 
 .flow-text span {
-    font-size: 1.6rem;
+    white-space: nowrap;
     margin-bottom: 5px;
+    font-size: 1.8rem;
+}
 
+.first-text {
+    top: 25%;
+}
+
+.top-number {
+    justify-items: start;
+    padding-right: 30px;
 }
 
 
-
-.odd-number {
-    transform: translateX(-30%);
+.bottom-number {
+    justify-items: end;
+    padding-left: 30px;
 }
 
-.even-number {
-    transform: translateX(25%);
-}
 
 
 /* 風船アニメーション */
@@ -59,19 +67,19 @@
     animation: float2 5.2s ease-in-out infinite 0.3s;
 }
 
-.flow-items:nth-child(2) .flow-item:nth-child(1) {
+.flow-items:nth-child(1) .flow-item:nth-child(3) {
     animation: float3 3.8s ease-in-out infinite 0.6s;
 }
 
-.flow-items:nth-child(2) .flow-item:nth-child(2) {
+.flow-items:nth-child(2) .flow-item:nth-child(1) {
     animation: float4 4.8s ease-in-out infinite 0.1s;
 }
 
-.flow-items:nth-child(3) .flow-item:nth-child(1) {
+.flow-items:nth-child(2) .flow-item:nth-child(2) {
     animation: float5 5.3s ease-in-out infinite 0.5s;
 }
 
-.flow-items:nth-child(3) .flow-item:nth-child(2) {
+.flow-items:nth-child(2) .flow-item:nth-child(3) {
     animation: float6 4.2s ease-in-out infinite 0.2s;
 }
 
@@ -164,21 +172,26 @@
 レスポンシブ
 ーーーーーーーーーーーーーーーーーーーーーーーーーーー*/
 @media (max-width: 768px) {
+
+    .flow {
+    margin-bottom: 80px;
+}
+
     .wrapper {
         padding-inline: 3%;
     }
 
-    .flow-inner {
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
+    .flow-items {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 10px;
     }
 
-    .odd-number {
-        transform: translateX(0);
+    .top-number {
+        padding-right: 0;
     }
 
-    .even-number {
-        transform: translateX(0);
+    .bottom-number {
+        padding-left: 0;
     }
 }
