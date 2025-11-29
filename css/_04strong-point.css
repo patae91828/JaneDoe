@@ -331,6 +331,60 @@ body.modal-open {
 
 
 /*=================================================
+LINEQR専用ページ＿page7
+===================================================*/
+.page-modal-apply {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    max-width: 760px;
+    background: #fff;
+    padding: 40px;
+    border-radius: 14px;
+    transform: translate(-50%, -50%) scale(0.9);
+    display: none;
+    z-index: 1000; /* ← これを追加！！ */
+    transition: transform .25s ease, opacity .25s ease;
+    opacity: 0;
+}
+.page-modal-apply.show {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+    display: block;
+}
+
+.page-modal-apply .number{
+    font-size: 4.0rem;
+    font-weight: bold;
+    color: #497BA1;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.page-modal-apply .text{
+    font-size: 3.0rem;
+    font-weight: bold;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.page-modal-apply .text::before {
+    width: 80px;
+    height: 0.4rem;
+    content: "";
+    position: absolute;
+    text-align: center;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #497BA1;
+}
+
+
+
+/*=================================================
 申し込みボタン
 ===================================================*/
 .sp-apply{
@@ -388,5 +442,17 @@ body.modal-open {
     .small-page-img-img{
         display: flex;
         flex-direction: column;
+    }
+
+    .page-modal .text{
+        font-size: 2.5rem;
+    }
+
+    .page-modal-img .text{
+        font-size: 2.5rem;
+    }
+    
+    .page-modal-apply .text{
+        font-size: 2.5rem;
     }
 }
